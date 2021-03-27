@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.symbol-quote>li::before{
+    content: '';
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav_list{
+    background-color: rgb(114, 116, 115);
+    display: flex;
+    align-items: center;
+}
+
+.nav_list-link{
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: none; 
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.nav_list:hover{
+    background-color: rgb(63, 62, 62);
+    width: 300px;
+}
+
+.menu::before{
+    content: 'menu'!important;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 36px;
+    height: 24px!important;
+    letter-spacing: 3px;
+}
+
+.edit::before{
+    background-image: url(../media/edit.png);
+}
+
+.favorites::before{
+    background-image: url(../media/favorites.png);
+}
+
+.history::before{
+    background-image: url(../media/history.png);
+}
+
+.security::before{
+    background-image: url(../media/security.png);
+}
+
+.settings::before{
+    background-image: url(../media/settings.png);
+}
+
+.block{
+    margin: 0 auto;
+    padding-left: 160px;
+}
+
+.fixed{
+    position: fixed;
+    left: 0;
+}
+
+.fixed:hover .nav_list-link{
+    display: block;
+}
+
+.text{
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-family: 'Noto Sans HK', sans-serif;
+    text-transform: uppercase;
+}
+
+.text:last-child{
+    margin-bottom: 0px;
+}
+
+.last-item{
+    height: 100vh;
+}
+
+h2{
+    padding-bottom: 20px;
+}
